@@ -13,9 +13,8 @@ class HelperText extends StatelessWidget {
           style: TextButton.styleFrom(
               primary: const Color(0xFFF5F6FA),
               backgroundColor: const Color(0xFFE02B57)),
-          // label: const Text('Clique'),
-          // icon: const Icon(Icons.ads_click),
-          onPressed: () {}, child: const Text('Clique'),
+          onPressed: () {},
+          child: const Text('Clique'),
         ));
   }
 }
