@@ -16,7 +16,11 @@ void main() {
       ),
     );
 
+    expect(tester.getSize(find.byType(TextButton)).width, equals(125.0));
+    expect(tester.getSize(find.byType(TextButton)).height, equals(44.0));
     expect(find.text('Clique'), findsOneWidget);
-    expect(find.byType(TextButton), findsOneWidget);
+    expect(find.byType(FloatingActionButton), findsOneWidget);
+    expect(
+        find.widgetWithIcon(FloatingActionButton, Icons.add), findsOneWidget);
   });
 }

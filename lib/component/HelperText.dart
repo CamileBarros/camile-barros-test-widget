@@ -19,13 +19,11 @@ class HelperText extends StatelessWidget {
             child: const Text('Clique'),
           ),
         ),
-        const SizedBox(
-          height: 44,
-          width: 125,
-          child: FloatingActionButton(
-            onPressed: null,
-          ),
-        )
+        const FloatingActionButton(
+          onPressed: null,
+          backgroundColor: Color(0xFFE02B57),
+          child: Icon(Icons.add),
+        ),
       ],
     );
   }
