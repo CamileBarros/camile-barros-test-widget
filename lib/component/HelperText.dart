@@ -24,6 +24,8 @@ class HelperText extends StatelessWidget {
           width: 125,
           child: FloatingActionButton(
             onPressed: null,
+            backgroundColor: Color(0xFFE02B57),
+            child: Icon(Icons.add),
           ),
         )
       ],
