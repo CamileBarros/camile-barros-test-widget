@@ -1,4 +1,4 @@
-import 'package:design/design.dart';
+import 'package:design/component/HelperText.dart';
 import 'package:flutter/material.dart';
 
 void main() {
