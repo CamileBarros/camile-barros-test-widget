@@ -5,7 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'main_app.dart';
 
 void main() {
-  testWidgets('', (WidgetTester tester) async {
+  testWidgets('When the button is clicked', (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
         home: TestAppWidget(
