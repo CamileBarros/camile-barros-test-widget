@@ -5,19 +5,22 @@ import 'package:flutter_test/flutter_test.dart';
 import 'main_app.dart';
 
 void main() {
-  testWidgets(
-      'When the Helper has a title, it should render a Helper component',
-      (WidgetTester tester) async {
+  testWidgets('When the button is clicked', (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
         home: TestAppWidget(
           body: HelperText(
-            text: 'carlos',
+            text: 'Clique',
           ),
         ),
       ),
     );
 
-    expect(find.text('carlos'), findsOneWidget);
+    expect(tester.getSize(find.byType(TextButton)).width, equals(125.0));
+    expect(tester.getSize(find.byType(TextButton)).height, equals(44.0));
+    expect(find.text('Clique'), findsOneWidget);
+    expect(find.byType(FloatingActionButton), findsOneWidget);
+    expect(
+        find.widgetWithIcon(FloatingActionButton, Icons.add), findsOneWidget);
   });
 }

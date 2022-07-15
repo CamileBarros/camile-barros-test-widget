@@ -1,4 +1,4 @@
-import 'package:design/design.dart';
+import 'package:design/component/HelperText.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             const HelperText(
-              text: 'carlos',
+              text: 'Clique',
             ),
           ],
         ),

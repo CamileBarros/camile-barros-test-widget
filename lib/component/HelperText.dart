@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_unnecessary_containers
-
 import 'package:flutter/material.dart';
 
 class HelperText extends StatelessWidget {
@@ -8,8 +6,25 @@ class HelperText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(text),
+    return Column(
+      children: [
+        SizedBox(
+          height: 44,
+          width: 125,
+          child: TextButton(
+            style: TextButton.styleFrom(
+                primary: const Color(0xFFF5F6FA),
+                backgroundColor: const Color(0xFFE02B57)),
+            onPressed: () {},
+            child: const Text('Clique'),
+          ),
+        ),
+        const FloatingActionButton(
+          onPressed: null,
+          backgroundColor: Color(0xFFE02B57),
+          child: Icon(Icons.add),
+        ),
+      ],
     );
   }
 }
